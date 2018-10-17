@@ -29,7 +29,7 @@ Shader "LT/Lesson2"
 			{
 				VertextOutput result;
 				result.pos = UnityObjectToClipPos(input.vertex);
-				result.col = input.vertex + float4(_OffsetX, _OffsetY, _OffsetZ, 0);
+				result.col = input.vertex + float4(_SinTime.w + 0.5, _SinTime.w + 0.5, _SinTime.w + 0.5, 0);
 				return result;
 			}
 
